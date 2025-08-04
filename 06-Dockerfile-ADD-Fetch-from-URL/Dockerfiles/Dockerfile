@@ -8,5 +8,4 @@ LABEL org.opencontainers.image.description="A Dockerfile demo illustrating the A
 LABEL org.opencontainers.image.version="1.0"
 
 # Using GitHub Repository to download files
-ADD https://github.com/stacksimplify/docker-add-fetch-url-demo.git#v1.0.0:docs /usr/share/nginx/html
 ADD https://github.com/Sankaranarayanan-Nadar/ADD-from-Web.git#v1.0.0:docs /usr/share/nginx/html
