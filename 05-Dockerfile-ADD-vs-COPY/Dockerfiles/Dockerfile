@@ -2,7 +2,7 @@
 FROM nginx:alpine-slim
 
 # OCI Labels
-LABEL org.opencontainers.image.authors="Kalyan Reddy Daida"
+LABEL org.opencontainers.image.authors="Sankaranarayanan Nadar"
 LABEL org.opencontainers.image.title="Demo: COPY vs ADD Instructions in Dockerfile"
 LABEL org.opencontainers.image.description="A Dockerfile demo illustrating the differences between COPY and ADD instructions, including copying files and extracting tarballs."
 LABEL org.opencontainers.image.version="1.0"

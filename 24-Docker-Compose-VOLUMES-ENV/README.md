@@ -51,7 +51,7 @@ mysqldb/
 name: ums-stack
 services:
   mysql:
-    container_name: ums-mysqldb
+    container_name: ums-mysqldb_cont
     image: mysql:8.0
     restart: always
     environment:
@@ -115,7 +115,7 @@ You can connect to the MySQL container and interact with the database:
 
 ```bash
 # Connect to MySQL container
-docker exec -it ums-mysqldb mysql -u root -pdbpassword11
+docker exec -it ums-mysqldb_cont mysql -u root -pdbpassword11
 ```
 
 - Once inside the MySQL shell, you can run SQL queries to interact with the `webappdb` database.

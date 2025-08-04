@@ -76,7 +76,7 @@ cd multiplatform-demo
 
 # Build Multi-platform Docker Images and Push to Docker Hub
 docker buildx build --platform linux/amd64,linux/arm64 -t YOUR_DOCKER_ID/demo2-multiplatform-local:v1 --push .
-docker buildx build --platform linux/amd64,linux/arm64 -t stacksimplify/demo2-multiplatform-local:v1 --push .
+docker buildx build --platform linux/amd64,linux/arm64 -t sankaranarayanannadar/demo2-multiplatform-local:v1 --push .
 ```
 
 - **Replace** `YOUR_DOCKER_ID` with your actual Docker Hub username.
@@ -97,11 +97,11 @@ docker buildx build --platform linux/amd64,linux/arm64 -t stacksimplify/demo2-mu
 ```bash
 # Pull the Docker image
 docker pull YOUR_DOCKER_ID/demo2-multiplatform-local:v1
-docker pull stacksimplify/demo2-multiplatform-local:v1
+docker pull sankaranarayanannadar/demo2-multiplatform-local:v1
 
 # Inspect the Docker image
 docker image inspect YOUR_DOCKER_ID/demo2-multiplatform-local:v1
-docker image inspect stacksimplify/demo2-multiplatform-local:v1
+docker image inspect sankaranarayanannadar/demo2-multiplatform-local:v1
 
 # Observation:
 # 1. Verify the "Architecture" field in the output.
@@ -109,7 +109,7 @@ docker image inspect stacksimplify/demo2-multiplatform-local:v1
 
 # Run the Docker container
 docker run --name my-multiplatform-demo -p 8080:80 -d YOUR_DOCKER_ID/demo2-multiplatform-local:v1
-docker run --name my-multiplatform-demo -p 8080:80 -d stacksimplify/demo2-multiplatform-local:v1
+docker run --name my-multiplatform-demo -p 8080:80 -d sankaranarayanannadar/demo2-multiplatform-local:v1
 
 # List Docker containers
 docker ps
